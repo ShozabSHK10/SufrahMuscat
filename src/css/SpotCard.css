@@ -1,14 +1,13 @@
 .spot-card {
-  position: relative;
+  width: 250px; 
+  height: 350px; 
   border-radius: 8px;
   overflow: hidden;
   background-color: #1a1a1a;
-  transition: all 0.3s ease;
-  height: 100%;
-
   display: flex;
   flex-direction: column;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
 }
 
 .spot-card:hover {
@@ -17,15 +16,15 @@
 }
 
 .spot-image {
-  position: relative;
-  aspect-ratio: 2/3;
   width: 100%;
+  height: 60%; 
+  overflow: hidden;
 }
 
 .spot-image img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  object-fit: cover; 
 }
 
 .image-overlay {
@@ -51,6 +50,14 @@
   opacity: 1;
 }
 
+.spot-info {
+  padding: 1rem;
+  height: 40%; 
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
 .fav-btn {
   position: absolute;
   top: 1rem;
@@ -67,58 +74,20 @@
   justify-content: center;
   transition: background-color 0.2s;
 }
-
 .fav-btn:hover {
   background-color: rgba(0, 0, 0, 0.8);
 }
-
 .fav-btn.active {
   color: #ff4757;
-}
-
-.rating-select {
-  background-color: rgba(0, 0, 0, 0.7);
-  color: white;
-  border: none;
-  padding: 0.5rem;
-  border-radius: 4px;
-  cursor: pointer;
-  margin-top: 0.5rem;
-}
-
-.spot-info {
-  padding: 1rem;
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-  gap: 0.5rem;
-}
-
-.spot-info h3 {
-  font-size: 1rem;
-  margin: 0;
-}
-
-.spot-info p {
-  color: #999;
-  font-size: 0.9rem;
-}
-
-.user-rating {
-  color: #ffd700;
-  font-size: 0.9rem;
-  margin-top: auto;
 }
 
 @media (max-width: 768px) {
   .spot-card {
     font-size: 0.9rem;
   }
-
   .spot-info {
     padding: 0.75rem;
   }
-
   .fav-btn {
     width: 32px;
     height: 32px;

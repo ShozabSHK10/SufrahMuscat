@@ -1,26 +1,15 @@
-import "./css/App.css";
-import SpotCard from "./components/SpotCard";
-import NavBar from "./components/NavBar";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Home from "./pages/Home";
+import Login from "./pages/Login";
 
 function App() {
   return (
-    <>
-      <NavBar />
-      <SpotCard
-        spot={{
-          name: "Mohsin Burger",
-          spot_location: "Gubrah",
-          imageUrl: "/assets/SpotImages/purple-illusion.jpg",
-        }}
-      />
-      <SpotCard
-        spot={{
-          name: "Camilia",
-          spot_location: "Ruwi",
-          imageUrl: "/assets/SpotImages/bateman-8pool.jpg",
-        }}
-      />
-  </>
+    <Router>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/login" element={<Login />} />
+      </Routes>
+    </Router>
   );
 }
 
