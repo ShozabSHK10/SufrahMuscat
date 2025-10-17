@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Link } from "react-router-dom"; // import Link
+import { Link } from "react-router-dom"; 
 import "../css/Navbar.css";
 
 function NavBar({ onSearch }) {
@@ -17,7 +17,7 @@ function NavBar({ onSearch }) {
       <form className="navbar-search" onSubmit={handleSubmit}>
         <input
           type="text"
-          placeholder="Search spots..."
+          placeholder="Search for food spots..."
           value={searchQuery}
           onChange={(e) => setSearchQuery(e.target.value)}
         />
@@ -26,10 +26,8 @@ function NavBar({ onSearch }) {
 
       <div className="navbar-links">
         <Link to="/">Home</Link>
-        <Link to="/spots">Spots</Link>
         <Link to="/favorites">Favorites</Link>
-        <Link to="/about">About</Link>
-        <Link to="/login">Sign In / Sign Up</Link> {/* New link */}
+        <Link to="/login">Sign In</Link> 
       </div>
     </nav>
   );

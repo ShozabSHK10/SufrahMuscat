@@ -46,13 +46,13 @@ const Login = () => {
       <div className="toggle-container">
         <div className="toggle">
           <div className="toggle-panel toggle-left">
-            <h1>Welcome To <br />Code with Patel</h1>
+            <h1>Welcome To <br />Sufrah Muscat</h1>
             <p>Sign in With ID & Password</p>
             <button className="hidden" onClick={() => setIsRegister(false)}>Sign In</button>
           </div>
           <div className="toggle-panel toggle-right">
-            <h1>Hii Coder's</h1>
-            <p>Join "Code With Patel" to Improve Your Coding Skills</p>
+            <h1>Hi fellow food enthusiats's</h1>
+            <p>Sign-Up to Sufrah Muscat to discuss about your favourite spots in Muscat</p>
             <button className="hidden" onClick={() => setIsRegister(true)}>Sign Up</button>
           </div>
         </div>
