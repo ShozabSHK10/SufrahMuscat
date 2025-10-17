@@ -77,11 +77,12 @@ button:focus-visible {
 }
 
 .spots-grid {
-  display: flex;             
+  display: flex;            
   flex-wrap: wrap;           
-  gap: 20px;                 
-  justify-content: left;   
-  padding: 1rem;             
+  gap: 50px;                 
+  justify-content: center;  
+  padding: 3rem;    
+  margin-top: 280px;         
 }
 
 .navbar {
