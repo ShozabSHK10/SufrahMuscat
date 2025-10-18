@@ -1,6 +1,8 @@
 import { useState } from "react";
-import NavBar from "../components/NavBar";
-import SpotCard from "../components/SpotCard";
+import NavBar from "../../components/NavBar.jsx";
+import SpotCard from "../../components/SpotCard";
+
+
 
 function App() {
   const [searchQuery, setSearchQuery] = useState("");

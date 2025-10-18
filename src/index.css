@@ -21,7 +21,8 @@
   box-sizing: border-box;
 }
 
-html, body {
+html,
+body {
   overflow-x: hidden;
 }
 
@@ -30,7 +31,6 @@ body {
   width: 100%;
   min-height: 100vh;
   position: relative;
-  padding-top: 70px; /* reserve space for fixed navbar */
 }
 
 #root {
@@ -70,7 +70,7 @@ button {
 
 button:hover {
   color: #ffffff;
-  background-color: #FF46A2;
+  background-color: #ff46a2;
 }
 
 button:focus,
@@ -79,12 +79,12 @@ button:focus-visible {
 }
 
 .spots-grid {
-  display: flex;            
-  flex-wrap: wrap;           
-  gap: 50px;                 
-  justify-content: center;  
-  padding: 3rem;    
-  margin-top: 320px;         
+  display: flex;
+  flex-wrap: wrap;
+  gap: 50px;
+  justify-content: center;
+  padding: 3rem;
+  padding-top: 110px;
 }
 
 .navbar {

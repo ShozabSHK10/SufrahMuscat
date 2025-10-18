@@ -1,4 +1,4 @@
-import "../css/SpotCard.css"
+import "./SpotCard.css"
 
 function SpotCard({spot}) {
 
