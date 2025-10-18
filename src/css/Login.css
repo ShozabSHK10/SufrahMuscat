@@ -10,12 +10,17 @@
 }
 
 body {
-  background-color: rgba(0, 0, 0, 0.795);
+  background-image: 
+    url("/assets/LoginBG.jpg");
+  background-size: cover;         
+  background-repeat: no-repeat;   
+  background-position: center; 
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
   height: 100vh;
+  overflow: hidden;
 }
 
 .container {
